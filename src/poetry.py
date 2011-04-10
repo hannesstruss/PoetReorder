@@ -30,7 +30,7 @@ def get_most_common_follower(followers):
 	return result
 
 def get_gaussian_distributed_follower(follower_list):
-	rnd = min(len(follower_list) - 1, int(abs(random.gauss(0, 0.2)) * len(follower_list)))
+	rnd = min(len(follower_list) - 1, int(abs(random.gauss(0, 0.05)) * len(follower_list)))
 	return follower_list[rnd]
 
 def create_poem(db):
@@ -59,6 +59,6 @@ def get_pretty_follower_list(word, db):
 	return "\n".join(result)
 	
 if __name__ == '__main__':
-	input = read_input("billy_shakes.txt")
+	input = read_input("heine_wintermaerchen.txt")
 	for i in xrange(10):
 		print create_poem(input)
