@@ -9,7 +9,7 @@ def read_input(path):
 	
 	result = {}
 	
-	words = re.findall(r"[a-zA-ZäöüÄÖÜß']+", content)
+	words = re.findall(r"[a-zA-ZäöüÄÖÜß']+[.,;]?", content)
 	for n in xrange(len(words) - 1):
 		word = words[n].lower()
 		next_word = words[n + 1].lower()
@@ -30,7 +30,7 @@ def get_most_common_follower(followers):
 	return result
 
 def get_gaussian_distributed_follower(follower_list):
-	rnd = min(len(follower_list) - 1, int(abs(random.gauss(0, 0.05)) * len(follower_list)))
+	rnd = min(len(follower_list) - 1, int(abs(random.gauss(0, 0.5)) * len(follower_list)))
 	return follower_list[rnd]
 
 def create_poem(db):
