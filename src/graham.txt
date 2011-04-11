@@ -1,3 +1,5 @@
+Copyright Paul Graham http://www.paulgraham.com/gh.html
+
 A few months ago I finished a new book, and in reviews I keep noticing words like "provocative'' and "controversial.'' To say nothing of "idiotic.''
 
 I didn't mean to make the book controversial. I was trying to make it efficient. I didn't want to waste people's time telling them things they already knew. It's more efficient just to give them the diffs. But I suppose that's bound to yield an alarming book.
